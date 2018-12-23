@@ -5,6 +5,11 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
         http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
     id="WebApp_ID" version="2.5">
+    
+    <listener>
+		<listener-class>com.dxl.servlet.WebServerInitConfig</listener-class>
+	</listener>
+    
 <servlet>
     <servlet-name>UploadHandleServlet</servlet-name>
     <servlet-class>com.dxl.servlet.UploadHandleServlet</servlet-class>
@@ -13,5 +18,25 @@
 <servlet-mapping>
     <servlet-name>UploadHandleServlet</servlet-name>
     <url-pattern>/servlet/UploadHandleServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GetStarGameVersion</servlet-name>
+    <servlet-class>com.dxl.servlet.GetStarGameVersion</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>GetStarGameVersion</servlet-name>
+    <url-pattern>/servlet/GetStarGameVersion</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SetStarGameVersion</servlet-name>
+    <servlet-class>com.dxl.servlet.SetStarGameVersion</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SetStarGameVersion</servlet-name>
+    <url-pattern>/servlet/SetStarGameVersion</url-pattern>
 </servlet-mapping>
 </web-app>

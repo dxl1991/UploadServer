@@ -10,5 +10,4 @@
         上传文件：<input type="file" name="file1"><br/>
         <input type="submit" value="提交">
     </form>
-  </body>
 </html>
